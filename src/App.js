@@ -1,5 +1,7 @@
 import logo from './logo1.jpg';
 import './App.css';
+import 'bootstrap/js/dist/button';
+import 'bootstrap/js/dist/util';
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
 
         <h1>Coffee Application!</h1>
 
-        <form>
+        <ul>
             <label for="roast-selection"></label>
             <select id="roast-selection">
                 <option>light</option>
@@ -17,7 +19,7 @@ function App() {
                 <option>dark</option>
             </select>
             <input id="submit" type="submit" />
-        </form>
+        </ul>
 
         <table>
             <thead>
@@ -29,6 +31,24 @@ function App() {
             </thead>
             <tbody id="coffees"></tbody>
         </table>
+
+
+        
+        <div class="container">
+          <h2>Hoverable Dark Table</h2>
+          <p>The .table-hover class adds a hover effect (grey background color) on table rows:</p>            
+          <table class="table table-dark table-hover">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ROAST</th>
+              </tr>
+            </thead>
+            <tbody id="coffees"></tbody>
+          </table>
+        </div>
+
 
         <p>
           Please <code>check out</code> gitHub.
